@@ -84,3 +84,9 @@ input {
     align-items: center;
     gap: 10px;
 }
+
+@media screen and (max-width: 600px) {
+    .input-container {
+        margin: 0px 20px 0px 20px;
+    }
+}
