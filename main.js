@@ -7,6 +7,7 @@ let isPalCont = document.querySelector('.is-palindrome-container')
 let isntPalCont = document.querySelector('.isnt-palindrome-container')
 
 function isPalindrome(string) {
+    string = string.toLowerCase().replace(/[^a-zA-Z0-9]/g, "");
     let array = string.split("");
     let reverse = array.reverse().join("");
     return string === reverse;
