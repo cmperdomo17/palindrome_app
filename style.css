@@ -31,13 +31,15 @@ section {
 }
 
 .input-container {
-    display: flex;
+    position: relative;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
 #close-icon {
+    position: absolute;
+    right: 10px;
     cursor: pointer;
     transition: .5s ease;
 }
@@ -47,9 +49,10 @@ section {
 }
 
 input {
-    width: 20rem;
+    width: 15rem;
     text-align: center;
     padding: .5rem;
+    padding-right: 3.2rem;
     border: none;
     border-radius: 20px;
     background-color: white;
@@ -86,7 +89,4 @@ input {
 }
 
 @media screen and (max-width: 600px) {
-    .input-container {
-        margin: 0px 20px 0px 20px;
-    }
 }
